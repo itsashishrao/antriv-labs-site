@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>About Us — Antriv Labs</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    /* Extra paragraph spacing */
+    .about-box p {
+      margin-bottom: 2rem; /* 2-line gap */
+      line-height: 1.8;
+    }
+
+    /* Center align title */
+    .section-title {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    /* Bullet point spacing */
+    .about-box ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+    .about-box ul li {
+      margin-bottom: 1rem; /* space between bullets */
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body class="loading">
+  <!-- Preloader -->
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader-capsule">
+      <div class="preloader-progress"></div>
+    </div>
+  </div>
+
+  <div id="smooth-content">
+    <!-- Header -->
+    <header class="header">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Antriv Labs" class="brand-logo"/>
+        <span class="brand-text">Antriv Labs</span>
+      </div>
+      <nav class="nav">
+        <a href="index.html#home">Home</a>
+        <a href="about.html" class="active">About Us</a>
+      </nav>
+    </header>
+
+    <!-- Our Story -->
+    <section class="about top-pad" aria-label="Our Story">
+      <h2 class="section-title underlined">Our Story</h2>
+
+      <div class="about-box gradient-outline">
+        <p><strong>Antriv Labs – We Create, Preserve, and Transform.</strong></p>
+
+        <p>
+          At Antriv Labs, we believe in a future where technology is deeply personal, fiercely private, and unbelievably fast. 
+          Born with a bold vision and rooted in ancient wisdom, our name is inspired by the divine trinity – Brahma (the creator), 
+          Vishnu (the preserver), and Shiva (the transformer). Just like this cosmic balance, our mission is to create powerful AI solutions, 
+          preserve the sanctity of user data, and transform the way India interacts with artificial intelligence.
+        </p>
+
+        <p>
+          We aren't trying to do everything — we’re focused on doing one thing exceptionally well. 
+          Our task-specific language models and semantic search systems are designed to outperform general-purpose AI — 
+          delivering results up to 99% faster than OpenAI. How? Because we build with laser focus, custom-trained models, 
+          and deep understanding of the problem — not bloated, one-size-fits-all solutions.
+        </p>
+
+        <p><strong>Our core values are simple but powerful:</strong></p>
+
+        <p><em>Built for Privacy</em> — Your data is only yours. Our models run on your servers, with no third-party access, no leakage, and complete transparency.</p>
+
+        <p><em>Built Just for You</em> — Custom AI solutions tailored to your specific workflows, trained on your own data, delivering unmatched speed and accuracy.</p>
+
+        <p>
+          We also power semantic search for modern India. Through simple embedded code and ready-made plugins for Shopify and WordPress, 
+          we enable D2C brands to offer lightning-fast, intent-based search experiences — starting with eCommerce and expanding to every digital frontier.
+        </p>
+
+        <p>And the best part? We’re democratizing this power — all at the cost of a small pizza.</p>
+
+        <p><strong>Proudly made in India, made for India,</strong> Antriv Labs is here to build the future of AI — one that’s fast, focused, private, and deeply personal.</p>
+
+        <!-- Example list with spacing -->
+        <h3>Our Approach</h3>
+        <ul>
+          <li>Laser-focused models ≫ higher accuracy on domain tasks</li>
+          <li>Up to 10–50× cheaper to run in production</li>
+          <li>Predictable outputs; easier to validate & govern</li>
+          <li>Private deployment — bring the model to your data</li>
+        </ul>
+
+        <h3>LLMs (General-Purpose)</h3>
+        <ul>
+          <li>Broad reasoning, but inconsistent for narrow tasks</li>
+          <li>Higher latency & compute costs at scale</li>
+          <li>Output drift; harder to constrain precisely</li>
+          <li>Often requires sending data to third parties</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <nav>
+        <a href="index.html#home">Home</a> |
+        <a href="about.html" class="active">About Us</a>
+      </nav>
+      <p>© 2025 Antriv Labs</p>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+  <script>
+    // Initialize Locomotive Scroll - only smooth, no forced auto scroll
+    const scroll = new LocomotiveScroll({
+      el: document.querySelector("#smooth-content"),
+      smooth: true,
+      lerp: 0.08, // control smoothness
+      multiplier: 1 // normal scroll speed
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
